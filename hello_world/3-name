@@ -1,2 +1,2 @@
 #!/bin/bash
-cgg cisfun.c -o cisfun
+cgg &CFILE -o cisfun
