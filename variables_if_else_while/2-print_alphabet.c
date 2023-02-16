@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include <ctype.h>
 
-/*
+/**
  * main - program that prints the alphabet in lowercase
- * only use putchar
+ * You can only use one putchar
  * Return: 0
  */
 
