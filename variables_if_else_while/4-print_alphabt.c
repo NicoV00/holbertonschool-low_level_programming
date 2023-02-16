@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-char letter = 'a' ;
-while eter <= 'z' ; 
-if (letter != 'e' && letter != 'q') ;
+char letter = 'a';
+while (letter <= 'z')
+if (letter != 'e' && letter != 'q')
 putchar(letter);
 }
 putchar('\n');
