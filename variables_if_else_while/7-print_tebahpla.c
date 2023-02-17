@@ -8,11 +8,10 @@
  *    **/
 int main(void)
 {
-        char *abc = "abcdefghijklmnopqrstuvwxyz";
-        int letra;
-
-        for (letra = 25; letra >= 0; letra--)
-                putchar(abc[letra]);
-        putchar('\n');
-        return (0);
+char *abc = "abcdefghijklmnopqrstuvwxyz";
+int letra;
+for (letra = 25; letra >= 0; letra--)
+	putchar(abc[letra]);
+putchar('\n');
+return (0);
 }
