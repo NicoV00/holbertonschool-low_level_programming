@@ -9,12 +9,20 @@
  *
  * Return: empty
  */
-
 void print_alphabet_x10(void)
 {
-int i, x;
+	char c;
+	int i = 0;
 
-for (x = 0; x < 10; x++)
-{
-for (
+	while (i <= 9)
+	{
+		for (c = 'a'; c <= 'z'; c++)
+		{
+			_putchar(c);
+		}
+
+		_putchar('\n');
+
+		i++;
+	}
 }
