@@ -7,6 +7,8 @@
  *
  * @n: number
  *
+ * Description: sort out a number in positive, negative or 0
+ *
  * Return: 1 and prints +, 0 prints 0, -1 prints -
  */
 int print_sign(int n)
