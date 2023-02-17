@@ -1,17 +1,20 @@
-#include <time.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 #include "main.h"
-
 /**
- * print_alphabet - function that prints the alphabet, lowercase
- * You can only use _putchar twice in your code
- * Return: nothing.
+ * main - print_alphabet
+ +
+ * Return: empty
  */
-
 void print_alphabet(void)
-{	int i;
-for (i = 97; i < 123; i++)
-putchar(i);
+{
+char c;
 
-putchar(10);
+for (c = 'a'; c <= 'z'; c++)
+{
+_putchar(c);
+}
+
+_putchar('\n');
 }
