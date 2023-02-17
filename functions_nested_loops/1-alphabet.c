@@ -10,12 +10,11 @@
  */
 
 void print_alphabet(void)
-{
-int l = 'a';
-while (l <= 'z')
-{
-_putchar(l);
-l += 1;
-}
-_putchar(10);
+{	
+int i;
+for (i = 97; i < 123; i++)
+putchar(i);
+
+putchar(10);
+
 }
