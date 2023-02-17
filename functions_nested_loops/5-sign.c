@@ -5,9 +5,9 @@
 /**
  * print_sign - printea alphabet
  *
- * Description: multiple times
+ * @n
  *
- * Return: 1 and prints + if n is greater than zero, 0 and prints 0 if n is zero, -1 and prints - if n is less than zero
+ * Return: 1 and prints +, 0 prints 0, -1 prints -
  */
 int print_sign(int n)
 {
