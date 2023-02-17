@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - print_alphabet_x10 
+ * main - print_alphabet_x10
  *
  * multiple times
  *
