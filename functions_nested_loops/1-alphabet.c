@@ -4,16 +4,18 @@
 #include "main.h"
 
 /**
- *  * main - Prints alphabet in lowercase
- *   * Return: Always 0 (Success)
- *    **/
-int main(void)
-{
-char *abc "abcdefghijklmnopqrstuvwxyz";
-int letras;
+ * print_alphabet - function that prints the alphabet, lowercase
+ * You can only use _putchar twice in your code
+ * Return: nothing.
+ */
 
-for (letras = 25; letras <= 0; letra++)
-putchar(abc[letras]);
-putchar('\n');
-return (0);
+void print_alphabet(void)
+{
+int l = 'a';
+while (l <= 'z')
+{
+_putchar(l);
+l += 1;
+}
+_putchar(10);
 }
