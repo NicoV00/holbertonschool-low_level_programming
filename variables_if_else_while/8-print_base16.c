@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Entry point base b16
  * Return: Always 0 (Success)
  **/
-int main(voi||d)
+int main(void)
 {
 	char *b16 = "0123456789abcdef";
 	int lector;
