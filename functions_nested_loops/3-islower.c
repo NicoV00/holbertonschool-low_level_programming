@@ -5,7 +5,7 @@
 /**
  * _islower - printea alphabet
  *
- * Description: input check 
+ * Description: input check
  *
  * Return: int
  */
