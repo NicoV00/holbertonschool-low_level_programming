@@ -4,8 +4,7 @@
 #include "main.h"
 /**
  * _islower - printea alphabet
- *
- * Description: input check
+ * @c: input check
  *
  * Return: int
  */
