@@ -3,9 +3,9 @@
 #include <time.h>
 #include "main.h"
 /**
- * main - print_alphabet_x10
+ * print_alphabet_x10 - printea alphabet
  *
- * multiple times
+ * Description: multiple times
  *
  * Return: empty
  */
