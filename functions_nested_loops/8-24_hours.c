@@ -5,13 +5,13 @@
  *
  * Description: clock
  *
- * Return: emtpy
+ * Return: empty
  */
 void jack_bauer(void)
 {
 	int h, m;
 
-	for (m = 0; m < 60; h++)
+	for (h = 0; h < 60; h++)
 		for (m = 0; m < 60; m++)
-			printf("%.2d:%:2d\n", h, m);
+			printf("%.2d:%.2d\n", h, m);
 }
