@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * print_most_numbers - Prints from 0 to 9
+ * print_most_numbers - empty point
  *
- * Return: void
+ * Description: size
+ *
+ * Return: Always 0 (success)
  */
+
 void print_most_numbers(void)
 {
-	int num;
+	int i;
 
-	for (num = 0; num < 10; num++)
-	{
-		if (num == 2 || num == 4)
-			continue;
+	for (i = 48; i < 58; i++)
+		if ((i != 50) && (i != 52))
+			_putchar(i);
 
-		printf("%d", num);
-	}
-	printf("\n");
+	_putchar(10);
 }
