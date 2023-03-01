@@ -5,24 +5,23 @@
  *
  * @str: string
  *
- * Return: 0.
+ * Return: void.
  */
 void puts_half(char *str)
 {
-	int i, j, max;
+	int x = 0, i = 0;
 
-	i = 0;
-	while (str[i] != '\0')
+	while (str[x])
 	{
 		i++;
+		x++;
 	}
-	max = i;
-	j = max / 2;
-	while (j <= max)
+	for (x = 0; x < i; x++)
 	{
-		_putchar(str[j]);
-		j++;
+		if (i % 2 == 0 && x >= i / 2)
+			_putchar(str[x]);
+		else if (x - 1 >= i / 2)
+			_putchar(str[x]);
 	}
 	_putchar('\n');
 }
-
