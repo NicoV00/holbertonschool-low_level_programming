@@ -3,6 +3,7 @@
 /**
  * _puts_recursion - prints a string in reverse
  * @s: string
+ * Description: printeo una string al reves
  * Return: 0.
  **/
 
