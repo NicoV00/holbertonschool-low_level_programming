@@ -2,7 +2,7 @@
 /**
  * _strstr - function locates a substring
  *
- * @haystack: string 
+ * @haystack: string
  * @needle: substring
  *
  * Return: char
