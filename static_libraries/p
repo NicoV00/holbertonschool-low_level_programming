@@ -1,4 +1,0 @@
-#!/bin/bash
-git push .
-git commit -m 'libraries'
-git push
