@@ -28,5 +28,5 @@ int  _funcionSQR(int n, int x)
 
 int  _sqrt_recursion(int n)
 {
-	return (funcionSQR(n, 0));
+	return (_funcionSQR(n, 0));
 }
