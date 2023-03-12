@@ -16,12 +16,12 @@ int main(__attribute__((unused))int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		printf("error\n");
+		printf("Error\n");
 		return (1);
 	}
 	x1 = atoi(argv[1]);
 	x2 = atoi(argv[2]);
-	
+
 	ans = x1 * x2;
 	printf("%d\n", ans);
 	return (0);
