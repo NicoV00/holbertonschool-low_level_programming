@@ -1,52 +1,34 @@
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
-#include "function_pointers.h"
-
-/**
- *  * print_name_as_is - prints a name as is
- *   * @name: name of the person
- *    *
- *     * Return: Nothing.
- *      */
-void print_name_as_is(char *name)
-{
-	    printf("Hello, my name is %s\n", name);
-}
-
-/**
- *  * print_name_uppercase - print a name in uppercase
- *   * @name: name of the person
- *    *
- *     * Return: Nothing.
- *      */
-void print_name_uppercase(char *name)
-{
-	    unsigned int i;
-
-	        printf("Hello, my uppercase name is ");
-		    i = 0;
-		        while (name[i])
-				    {
-					            if (name[i] >= 'a' && name[i] <= 'z')
-							            {
-									                putchar(name[i] + 'A' - 'a');
-											        }
-						            else
-								            {
-										                putchar(name[i]);
-												        }
-							            i++;
-								        }
-}
+#include "lists.h"
 
 /**
  *  * main - check the code
  *   *
- *    * Return: Always 0.
+ *    * Return: Always EXIT_SUCCESS.
  *     */
 int main(void)
 {
-	    print_name("Bob", print_name_as_is);
-	        print_name("Bob Dylan", print_name_uppercase);
-		    printf("\n");
-		        return (0);
+	    dlistint_t *head;
+	        dlistint_t *new;
+		    dlistint_t hello = {8, NULL, NULL};
+		        size_t n;
+
+			    head = &hello;
+			        new = malloc(sizeof(dlistint_t));
+				    if (new == NULL)
+					        {
+							        dprintf(2, "Error: Can't malloc\n");
+								        return (EXIT_FAILURE);
+									    }
+				        new->n = 9;
+					    head->prev = new;
+					        new->next = head;
+						    new->prev = NULL;
+						        head = new;
+							    n = print_dlistint(head);
+							        printf("-> %lu elements\n", n);
+								    free(new);
+								        return (EXIT_SUCCESS);
 }
