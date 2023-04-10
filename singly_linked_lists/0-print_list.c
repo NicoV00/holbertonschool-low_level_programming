@@ -3,6 +3,7 @@
 /*
  * print_list - function that prints all elements of list_t
  * @h: head
+ * Description: nothing
  * Return: number of nodes
  */
 
