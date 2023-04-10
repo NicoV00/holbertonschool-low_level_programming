@@ -2,6 +2,7 @@
 
 /*
  * add_node - Adds a new node
+ *
  * @head: the list to which it will be added
  * @str: the value of str
  * Return: returns an address of new node
