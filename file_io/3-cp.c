@@ -25,14 +25,14 @@ int main(int argc, char *argv[])
 		 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		 exit(98);
 	 }
-	 
+ 
 	 file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	 if (file_to == -1)
 	 {
 		 dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]);
 		 exit(99);
 	 }
-	 
+ 
 	 while ((oread = read(file_from, buf, 1024)) > 0)
 	 {
 		 owrite = write(file_to, buf, oread);
@@ -42,19 +42,19 @@ int main(int argc, char *argv[])
 			 exit(99);
 		 }
 	 }
-	 
+ 
 	 if (oread == -1)
 	 {
 		 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		 exit(98);
 	 }
-	 
+ 
 	 if (close(file_from) == -1)
 	 {
 		 dprintf(STDERR_FILENO, "Error: Can't close file descriptor %d\n", file_from);
 		 exit(100);
 	 }
-	 
+ 
 	 if (close(file_to) == -1)
 	 {
 		 dprintf(STDERR_FILENO, "Error: Can't close file descriptor %d\n", file_to);
